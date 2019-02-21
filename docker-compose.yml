@@ -7,6 +7,6 @@ services:
       - ./conf.d:/etc/nginx/conf.d
       - ./letsencrypt:/etc/letsencrypt
       - ./letsencrypt-log:/var/log/letsencrypt
-    # ports:
-    #   - "80:80"
-    #   - "443:443"
+    ports:
+      - "80:80"
+      - "443:443"
