@@ -3,6 +3,8 @@ services:
   http:
     build: .
     volumes:
+      - /root/dist/admin-web:/usr/share/nginx/html/admin-web
+      - /root/dist/zt-web:/usr/share/nginx/html/zt-web
       - ./nginx.conf:/etc/nginx/nginx.conf
       - ./conf.d:/etc/nginx/conf.d
       - ./letsencrypt:/etc/letsencrypt
